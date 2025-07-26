@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start animations after a short delay to allow for rendering
     setTimeout(startAnimations, 300);
     
-    ]
     
+
     // For the contact page form submission
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
