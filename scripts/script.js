@@ -43,32 +43,65 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', animateOnScroll);
 
     // Netlify form handling
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Form validation
-            const formData = new FormData(this);
-            let isValid = true;
-            
-            formData.forEach((value, key) => {
-                if (!value.trim() && key !== 'file') {
-                    isValid = false;
-                    const input = this.querySelector(`[name="${key}"]`);
-                    input.style.borderColor = 'red';
-                }
-            });
-            
-            if (isValid) {
-                this.submit();
-                // Show success message
-                const successMsg = document.createElement('div');
-                successMsg.className = 'form-success';
-                successMsg.textContent = 'Thank you! Your message has been sent.';
-                this.parentNode.insertBefore(successMsg, this.nextSibling);
-                this.reset();
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    // Clear validation errors on input
+    const inputs = contactForm.querySelectorAll('input, textarea');
+    inputs.forEach(input => {
+        input.addEventListener('input', function() {
+            this.style.borderColor = '';
+        });
+    });
+
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        let isValid = true;
+
+        // Validate required fields
+        const requiredFields = contactForm.querySelectorAll('[required]');
+        requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+                field.style.borderColor = 'red';
+                isValid = false;
             }
         });
-    }
-});
+
+        if (isValid) {
+            // Show loading state
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+
+            // Create FormData and append form-name
+            const formData = new FormData(contactForm);
+            formData.append('form-name', 'contact');
+
+            // Submit form
+            fetch('/', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Show success message
+                    const successMsg = document.createElement('div');
+                    successMsg.className = 'form-success';
+                    successMsg.textContent = 'Thank you! Your message has been sent.';
+                    contactForm.parentNode.insertBefore(successMsg, contactForm.nextSibling);
+                    contactForm.reset();
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was a problem sending your message. Please try again.');
+            })
+            .finally(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            });
+        }
+    });
+}});

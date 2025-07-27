@@ -59,7 +59,13 @@
                 </div>
             </div>
 
-            <form action="POST" data-netlify="true" class="contact-form" name="contact" netlify>
+            <form method="POST" class="contact-form" name="contact" netlify netlify-honeypot="bot-field">
+                <!-- Add a honeypot field for spam protection -->
+                <input type="hidden" name="form-name" value="contact">
+                <div class="form-group" style="display:none">
+                    <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                </div>
+
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -82,14 +88,14 @@
 
                 <div class="form-group">
                     <label for="file">Upload File</label>
-                    <input type="file" id="myFile" rows="5" required name="message">
+                    <input type="file" id="myFile" name="file">
                 </div>
 
                 <div class="field">
                     <div data-netlify-recaptcha="true"></div>
                 </div>
 
-                <button type="submit" class="btn" >Send Message</button>
+                <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
     </main>
