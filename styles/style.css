@@ -137,7 +137,7 @@ body {
 /* Header Section */
 .header {
     max-width: 100%;
-    /* Remove height: 100vh */
+    height: 100vh;
     position: relative;
     min-height: 800px;
     display: flex;

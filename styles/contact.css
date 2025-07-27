@@ -2,15 +2,18 @@
 
 .contact-container {
     padding: 8rem 2rem 4rem;
+    background-color: var(--bg-gray);
     max-width: 1200px;
     margin: 0 auto;
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 20px);
 }
-
+.header{
+    height: 2px;
+}
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 2rem;
     align-items: flex-start;
 }
 
