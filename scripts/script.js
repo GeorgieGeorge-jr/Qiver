@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    
+
     // Animate elements on scroll
     const animateOnScroll = function() {
         const elements = document.querySelectorAll('.slide-up, .animate');

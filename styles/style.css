@@ -41,17 +41,24 @@ body {
     align-items: center;
     padding: 0 2rem;
     position: fixed;
-    width: calc(100% - 2rem);
+    width: calc(100% - 4rem); /* Consistent spacing */
     top: 1rem;
-    left: 1rem;
+    left: 2rem; /* Match the padding */
     height: 70px;
     background-color: rgba(255,255,255,0.96);
     z-index: 1000;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    transition: var(--transition);
 }
+
+.navListContainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 
 .logo {
     font-size: 1.8rem;
@@ -91,6 +98,21 @@ body {
     width: 100%;
 }
 
+.navToggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.navToggle .bar {
+    width: 25px;
+    height: 3px;
+    background: var(--primary);
+    transition: var(--transition);
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -114,8 +136,9 @@ body {
 
 /* Header Section */
 .header {
+    max-width: 100%;
+    /* Remove height: 100vh */
     position: relative;
-    height: 100vh;
     min-height: 800px;
     display: flex;
     align-items: center;
@@ -172,6 +195,10 @@ body {
     margin: 0 auto 3rem;
     color: var(--text-dark);
     opacity: 0.9;
+}
+
+.header.hero {
+    height: 100vh;
 }
 
 /* Hero Graphic */
@@ -233,6 +260,11 @@ body {
     .navList.active {
         right: 0;
     }
+
+    .navListContainer.active {
+        right: 0;
+    }
+    
     
     .navToggle {
         display: flex;
