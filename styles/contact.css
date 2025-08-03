@@ -1,20 +1,17 @@
 /* contact.css - Enhanced Version */
 
 .contact-container {
-    padding: 8rem 2rem 4rem;
-    background-color: var(--bg-gray);
-    max-width: 1200px;
-    margin: 0 auto;
-    min-height: calc(100vh - 20px);
+    padding: 2rem 0;
 }
+
 .header{
-    height: 2px;
+    height: 0;
 }
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: flex-start;
+    gap: 3rem;
+    margin-top: 2rem;
 }
 
 .contact-info {
@@ -182,11 +179,16 @@ button[disabled] {
 
 @media (max-width: 768px) {
     .contact-container {
-        padding: 7rem 1.5rem 3rem;
+        padding-top: 0.5rem; /* Reduced from 2rem */
     }
     
     .contact-content {
         grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        margin-top: -8rem; /* Reduced from 2rem */
+        gap: 1.5rem; /* Tighter grid spacing */
     }
     
     .contact-info, 

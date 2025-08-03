@@ -105,3 +105,40 @@ if (contactForm) {
         }
     });
 }});
+
+// Animate stats counting
+function animateStats() {
+    const stats = document.querySelectorAll('.stat-number');
+    if (stats) {
+        stats.forEach(stat => {
+            const target = parseInt(stat.textContent.replace(/[^0-9]/g, ''));
+            const suffix = stat.textContent.replace(/[0-9]/g, '');
+            let count = 0;
+            const increment = target / 30;
+            
+            const timer = setInterval(() => {
+                count += increment;
+                stat.textContent = Math.floor(count) + suffix;
+                if (count >= target) clearInterval(timer);
+            }, 50);
+        });
+    }
+}
+
+// Initialize everything
+document.addEventListener('DOMContentLoaded', function() {
+    // Your existing code
+    
+    // Add these new initializations
+    animateStats();
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
