@@ -34,6 +34,7 @@ body {
     overflow-x: hidden;
 }
 
+
 /* Navigation */
 .navContainer {
     display: flex;
@@ -63,17 +64,34 @@ body {
     display: flex;
     align-items: center;
     gap: 2rem;
+    margin-left: 180px; /* Prevent overlap with logo */
 }
 
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--primary);
+.logoContainer {
+    position: relative;
+    width: 180px; /* Match your desired logo width */
+    height: 100px; /* Match your navbar height */
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-self: start;
 }
+
+/* Video Logo Styling */
+.logoContainer video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Maintain aspect ratio */
+    object-position: left center; /* Align to left */
+    display: block;
+    border-radius: 0; /* Remove circular mask if not needed */
+    position: relative; /* Change from absolute */
+    z-index: 1; /* Bring in front of other elements */
+    margin: 0; /* Remove auto margins */
+    top: auto;
+    left: auto;
+}
+
 
 .navList {
     display: flex;
@@ -723,5 +741,59 @@ body {
 
     .nav-btn{
         display: none;
+    }
+}
+
+/* Logo Container */
+.logoContainer {
+    position: relative;
+    width: 180px; /* Match your desired logo width */
+    height: 60px; /* Match your navbar height */
+    display: flex;
+    align-items: center;
+}
+
+/* Video Logo Styling */
+.logoContainer video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Maintain aspect ratio */
+    object-position: left center; /* Align to left */
+    display: block;
+    border-radius: 0; /* Remove circular mask if not needed */
+    position: relative; /* Change from absolute */
+    z-index: 1; /* Bring in front of other elements */
+    margin: 0; /* Remove auto margins */
+    top: auto;
+    left: auto;
+}
+
+/* NavList Container Adjustments */
+.navListContainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 180px; /* Prevent overlap with logo */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+    .logoContainer {
+        width: 140px; /* Slightly smaller on tablets */
+    }
+    
+    .navListContainer {
+        margin-left: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logoContainer {
+        width: 120px; /* Smaller on mobile */
+        height: 50px;
+    }
+    
+    .navListContainer {
+        margin-left: 0; /* Reset for mobile menu */
     }
 }
