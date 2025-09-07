@@ -78,16 +78,19 @@ body {
 }
 
 /* Video Logo Styling */
-.logoContainer video {
-    object-fit: contain; /* Maintain aspect ratio */
-    object-position: left center; /* Align to left */
+.logoContainer img { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+    object-position: left; /* Align to left */
     display: block;
     border-radius: 0; /* Remove circular mask if not needed */
     position: relative; /* Change from absolute */
     z-index: 1; /* Bring in front of other elements */
     margin: 0; /* Remove auto margins */
-    top:  auto;
-    left: auto;
+    padding: 0;
+    top: 4px ;
+    left: -30px;
 }
 
 a{
