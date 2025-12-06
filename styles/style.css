@@ -166,7 +166,7 @@ body {
 /* Header Section */
 .header {
     width: 100%;
-    padding: 120px 0 60px; /* Adjusted for fixed nav */
+    padding: 70px 0 60px; /* Adjusted for fixed nav */
     position: relative;
     display: flex;
     align-items: center;
@@ -185,7 +185,7 @@ body {
     z-index: 2;
     max-width: 1200px;
     margin: 0;
-    padding: 0 2rem;
+    padding: 2rem 2rem;
     text-align: center;
 }
 

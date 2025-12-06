@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Qiver Fintech</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navContainer">
+            <div class="logoContainer">
+                <h1 class="logo">Qiver</h1>
+            </div>
+
+            <div class="navListContainer">
+                <ul class="navList">
+                    <li class="navItem"><a href="./index.html">Home</a></li>
+                    <li class="navItem"><a href="./about.html">About</a></li>
+                    <li class="navItem"><a href="./career.html">Careers</a></li>
+                    <li class="navItem"><a href="./faq.html" class="active">FAQ</a></li>
+                    <li class="navItem"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="navButtonContainer">
+                <button type="button" class="btn">
+                    Get Started
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="faq-container">
+        <!-- Hero Section -->
+        <section class="faq-hero">
+            <div class="container">
+                <h1 class="faq-hero-title">Frequently Asked Questions</h1>
+                <p class="faq-hero-subtitle">Find answers to common questions about Qiver's services, features, and support</p>
+                <div class="search-container">
+                    <input type="text" id="faq-search" placeholder="Search for questions...">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Categories -->
+        <section class="faq-categories">
+            <div class="container">
+                <div class="category-nav">
+                    <button class="category-btn active" data-category="all">All Questions</button>
+                    <button class="category-btn" data-category="general">General</button>
+                    <button class="category-btn" data-category="account">Account & Billing</button>
+                    <button class="category-btn" data-category="features">Features</button>
+                    <button class="category-btn" data-category="security">Security & Privacy</button>
+                    <button class="category-btn" data-category="technical">Technical Support</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section class="faq-accordion">
+            <div class="container">
+                <!-- General Questions -->
+                <div class="faq-category" data-category="general">
+                    <h2 class="faq-category-title">General Questions</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is Qiver and how does it work?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Qiver is an AI-powered financial management platform that automatically tracks, categorizes, and analyzes your financial data. It connects to your bank accounts, credit cards, and investment portfolios to provide real-time insights and help you make better financial decisions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How much does Qiver cost?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer three pricing tiers: Starter ($9.99/month), Professional ($19.99/month), and Enterprise (custom pricing). All plans come with a 30-day free trial. See our pricing page for detailed feature comparisons.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is there a mobile app available?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! Qiver is available on both iOS and Android. You can download it from the App Store or Google Play Store. All features are fully available on mobile with real-time sync across all your devices.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I use Qiver for my business?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! Our Professional and Enterprise plans are designed for businesses. They include features like team access, advanced reporting, and API integration. Contact our sales team for custom business solutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Account & Billing -->
+                <div class="faq-category" data-category="account">
+                    <h2 class="faq-category-title">Account & Billing</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I cancel my subscription?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can cancel your subscription anytime from your account settings. Go to Settings → Billing → Cancel Subscription. Your access will continue until the end of your current billing period.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I change my plan at any time?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately, and you'll receive a prorated credit or charge based on your billing cycle.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you offer discounts for annual plans?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! Save 20% by choosing annual billing. You can switch to annual billing anytime from your account settings.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What payment methods do you accept?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers for Enterprise plans.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div class="faq-category" data-category="features">
+                    <h2 class="faq-category-title">Features</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How accurate is the AI categorization?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our AI achieves 95% accuracy in automatic categorization. You can easily recategorize any transaction, and the AI learns from your corrections to improve over time.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can Qiver help with budgeting?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! Qiver includes smart budgeting features that analyze your spending patterns and help you create realistic budgets. You'll receive alerts when you're approaching budget limits.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Does Qiver support multiple currencies?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, Qiver supports over 50 currencies with real-time exchange rates. You can view all your finances in your preferred base currency.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I export my data from Qiver?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely. You can export your data in CSV, Excel, or PDF formats at any time. Enterprise plans also offer API access for custom integrations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security & Privacy -->
+                <div class="faq-category" data-category="security">
+                    <h2 class="faq-category-title">Security & Privacy</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How secure is my financial data?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We use bank-level 256-bit encryption, two-factor authentication, and never store your bank login credentials. Our systems are regularly audited and comply with GDPR, CCPA, and PCI DSS standards.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you sell my data to third parties?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Never. Your data belongs to you. We do not sell, rent, or trade your personal or financial information with third parties. See our privacy policy for full details.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What happens if Qiver is hacked?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We have multiple layers of security, constant monitoring, and a dedicated security team. In the unlikely event of a breach, we have protocols in place including immediate notification, free credit monitoring for affected users, and transparent communication about remediation steps.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Support -->
+                <div class="faq-category" data-category="technical">
+                    <h2 class="faq-category-title">Technical Support</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Which banks and financial institutions do you support?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We support over 10,000 financial institutions across 50+ countries. This includes major banks, credit unions, brokerages, and cryptocurrency exchanges. You can check specific institution support in our app.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What if my bank connection stops working?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Bank connections are maintained by our data partners. If a connection stops working, it's usually temporary and automatically resolves within 24 hours. You can also manually refresh the connection in your account settings.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I contact customer support?</h3>
+                            <span class="faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can reach us through in-app chat (fastest), email at support@qiver.com, or phone at +1 (555) 123-4567. Response times: Chat - under 5 minutes, Email - under 2 hours, Phone - immediate during business hours (9 AM - 6 PM EST).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Still Have Questions -->
+        <section class="contact-support">
+            <div class="container">
+                <div class="support-content">
+                    <h2>Still Have Questions?</h2>
+                    <p>Can't find what you're looking for? Our support team is here to help.</p>
+                    <div class="support-options">
+                        <a href="contact.html" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Contact Support
+                        </a>
+                        <a href="tel:+15551234567" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i> Call Us Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <script>
+        // Fetch and insert footer
+        fetch('./components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+
+    <script src="scripts/faq.js"></script>
+</body>
+</html>
