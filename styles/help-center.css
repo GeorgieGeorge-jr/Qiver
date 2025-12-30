@@ -69,7 +69,7 @@
 
 .search-btn {
     padding: 0 40px;
-    background: var(--primary-color);
+    background: var(--primary);
     color: white;
     border: none;
     cursor: pointer;
@@ -599,17 +599,22 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .help-hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        letter-spacing: -1px;
     }
     
     .search-wrapper {
-        flex-direction: column;
-        border-radius: 15px;
+        flex-direction: row;
+        margin: 0 10px;
+        height: 45px;
+        border-radius: 20px;
     }
     
     .search-btn {
-        padding: 15px;
+        padding: 5px;
+        font-weight:500;
         justify-content: center;
+        overflow: hidden;
     }
     
     .video-tutorial {
