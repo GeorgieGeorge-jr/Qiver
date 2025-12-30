@@ -81,6 +81,11 @@
     transition: var(--transition);
 }
 
+.search-btn i {
+    font-size: 1.2rem;
+    display: none;
+}
+
 .search-btn:hover {
     background: var(--primary-dark);
 }
@@ -615,7 +620,17 @@
         font-weight:500;
         justify-content: center;
         overflow: hidden;
+        
     }
+
+    .search-btn span {
+        display: none;
+    }
+    .search-btn i {
+    font-size: 1.2rem;
+    padding: 0 25px;
+    display: block;
+}
     
     .video-tutorial {
         grid-template-columns: 1fr;
