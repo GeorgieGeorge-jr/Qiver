@@ -1,3 +1,22 @@
+:root {
+    /* Modern Fintech Color Scheme */
+    --primary: #357960;
+    --primary-dark: #285c4a;
+    --primary-light: #e8f5f0;
+    --accent: #4a8dff;
+    --accent-dark: #3a70cc;
+    --text-dark: #1a2521;
+    --text-light: #f5f9f7;
+    --bg-light: #ffffff;
+    --bg-dark: #1a2521;
+    --bg-gray: #f8faf9;
+    --border-radius: 12px;
+    --box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --font-main: 'DM Sans', sans-serif;
+}
+
+
 /* FAQ Page Specific Styles */
 .faq-container {
     padding-top: var(--header-height);
@@ -6,7 +25,7 @@
 /* Hero Section */
 .faq-hero {
     background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
-    color: white;
+    color: var(--text-dark);
     padding: 100px 0;
     text-align: center;
 }
@@ -103,9 +122,10 @@
 
 /* FAQ Accordion */
 .faq-accordion {
+    margin: 0 20px;
     padding: 100px 0;
     background-color: #f8fafc;
-}
+} 
 
 .faq-category {
     margin-bottom: 60px;
@@ -155,19 +175,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--secondary-color);
-    color: var(--primary-color);
+    background: var(--primary);
+    color: rgb(255, 255, 255);
     border-radius: 50%;
     transition: var(--transition);
 }
 
 .faq-item.active .faq-toggle {
     transform: rotate(180deg);
-    background: var(--primary-color);
-    color: white;
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    
 }
 
 .faq-answer {
+    color: var(--text-dark);
     padding: 0 30px;
     max-height: 0;
     overflow: hidden;
@@ -180,7 +202,7 @@
 }
 
 .faq-answer p {
-    color: var(--text-light);
+    color: var(--text-dark);
     line-height: 1.8;
     margin-bottom: 15px;
 }
@@ -188,7 +210,7 @@
 /* Contact Support */
 .contact-support {
     padding: 100px 0;
-    background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, #1e40af 100%);
     color: white;
     text-align: center;
 }

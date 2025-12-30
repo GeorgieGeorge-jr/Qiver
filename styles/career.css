@@ -20,6 +20,7 @@
 
 .career-container {
     padding-top: var(--primary);
+    margin: 0 20px;
 }
 
 /* Hero Section */
@@ -28,6 +29,8 @@
     color: white;
     padding: 100px 0;
     text-align: center;
+    border-radius: 20px;
+
 }
 
 .career-hero-title {
@@ -78,7 +81,7 @@
 .value-card {
     background: white;
     padding: 40px 30px;
-    border-radius: var(--border-radius);
+    border-radius: 20px;
     text-align: center;
     box-shadow: var(--box-shadow);
     transition: var(--transition);
@@ -95,8 +98,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--text-light);
+    color: var(--primary);
     border-radius: 50%;
     font-size: 1.8rem;
 }
@@ -107,7 +110,7 @@
 }
 
 .value-card p {
-    color: var(--text-light);
+    color: var(--text-dark);
 }
 
 /* Benefits Section */
@@ -141,8 +144,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--text-light);
+    color: var(--primary);
     border-radius: 12px;
     font-size: 1.3rem;
 }
@@ -184,9 +187,9 @@
 
 .filter-btn:hover,
 .filter-btn.active {
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     color: white;
-    border-color: var(--primary-color);
+    border-color: var(--primary);
 }
 
 .positions-grid {
@@ -198,7 +201,7 @@
 .position-card {
     background: white;
     padding: 30px;
-    border-radius: var(--border-radius);
+    border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -246,7 +249,7 @@
 }
 
 .position-info p {
-    color: var(--text-light);
+    color: var(--text-dark);
     max-width: 500px;
 }
 
@@ -270,7 +273,7 @@
 .step-number {
     width: 60px;
     height: 60px;
-    background: var(--primary-color);
+    background: var(--primary);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -287,13 +290,14 @@
 }
 
 .process-step p {
-    color: var(--text-light);
+    color: var(--text-dark);
 }
 
 /* CTA Section */
 .career-cta {
     padding: 100px 0;
-    background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
+    margin: 0;
+    background: linear-gradient(135deg, var(--primary) 0%, #1e40af 100%);
     color: white;
     text-align: center;
 }
