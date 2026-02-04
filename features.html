@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Qiver Fintech</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/features.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navContainer">
+            <div class="logoContainer">
+                <h1 class="logo">Qiver</h1>
+            </div>
+
+            <div class="navListContainer">
+                <ul class="navList">
+                    <li class="navItem"><a href="./index.html">Home</a></li>
+                    <li class="navItem"><a href="./features.html" class="active">Features</a></li>
+                    <li class="navItem"><a href="./pricing.html">Pricing</a></li>
+                    <li class="navItem"><a href="./help-center.html">Help Center</a></li>
+                    <li class="navItem"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="navButtonContainer">
+                <button type="button" class="btn">
+                    Get Started
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="features-container">
+        <!-- Hero Section -->
+        <section class="features-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Powerful Features for Smarter Finance</h1>
+                    <p class="hero-subtitle">AI-powered tools to manage, track, and optimize your financial life</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary btn-large">
+                            <i class="fas fa-rocket"></i>
+                            Start Free Trial
+                        </button>
+                        <a href="#feature-demo" class="btn btn-secondary btn-large">
+                            <i class="fas fa-play-circle"></i>
+                            Watch Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Categorization Accuracy</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Financial Institutions</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Real-time Updates</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">256-bit</div>
+                        <div class="stat-label">Bank-Level Security</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Categories -->
+        <section class="feature-categories">
+            <div class="container">
+                <div class="category-nav">
+                    <button class="category-btn active" data-category="all">All Features</button>
+                    <button class="category-btn" data-category="tracking">Tracking</button>
+                    <button class="category-btn" data-category="insights">Insights</button>
+                    <button class="category-btn" data-category="automation">Automation</button>
+                    <button class="category-btn" data-category="security">Security</button>
+                    <button class="category-btn" data-category="collaboration">Collaboration</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Features Grid -->
+        <section class="main-features">
+            <div class="container">
+                <div class="features-grid" id="features-grid">
+                    <!-- Tracking Features -->
+                    <div class="feature-card" data-category="tracking">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Real-time Expense Tracking</h3>
+                        <p>Automatically track and categorize every transaction across all your accounts in real-time.</p>
+                        <div class="feature-badges">
+                            <span class="badge"><i class="fas fa-sync"></i> Live Sync</span>
+                            <span class="badge"><i class="fas fa-robot"></i> AI-powered</span>
+                        </div>
+                        <div class="feature-details">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Automatic categorization</li>
+                                <li><i class="fas fa-check"></i> Multi-currency support</li>
+                                <li><i class="fas fa-check"></i> Custom categories</li>
+                            </ul>
+                        </div>
+                        <button class="feature-learn-more">Learn More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+
+                    <div class="feature-card" data-category="tracking">
+                        <div class="feature-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>Unified Dashboard</h3>
+                        <p>View all your financial accounts in one place with a comprehensive, easy-to-understand dashboard.</p>
+                        <div class="feature-badges">
+                            <span class="badge"><i class="fas fa-eye"></i> 360° View</span>
+                        </div>
+                        <div class="feature-details">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Bank, credit card, investment accounts</li>
+                                <li><i class="fas fa-check"></i> Net worth tracking</li>
+                                <li><i class="fas fa-check"></i> Customizable widgets</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Insights Features -->
+                    <div class="feature-card featured" data-category="insights">
+                        <div class="feature-badge-popular">Most Popular</div>
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI Financial Insights</h3>
+                        <p>Get personalized recommendations and insights powered by machine learning algorithms.</p>
+                        <div class="feature-badges">
+                            <span class="badge"><i class="fas fa-star"></i> Smart Insights</span>
+                            <span class="badge"><i class="fas fa-bolt"></i> Real-time</span>
+                        </div>
+                        <div class="feature-details">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Spending pattern analysis</li>
+                                <li><i class="fas fa-check"></i> Savings opportunities</li>
+                                <li><i class="fas fa-check"></i> Investment suggestions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="feature-card" data-category="insights">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>Advanced Analytics</h3>
+                        <p>Deep dive into your finances with customizable reports and advanced analytics tools.</p>
+                        <div class="feature-badges">
+                            <span class="badge"><i class="fas fa-chart-bar"></i> Detailed Reports</span>
+                        </div>
+                        <div class="feature-details">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Custom report builder</li>
+                                <li><i class="fas fa-check"></i> Export to PDF/Excel</li>
+                                <li><i class="fas fa-check"></i> Historical trends</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Automation Features -->
+                    <div class="feature-card" data-category="automation">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Smart Budgeting</h3>
+                        <p>AI-powered budgeting that adapts to your spending patterns and financial goals.</p>
+                        <div class="feature-badges">
+                            <span class="badge"><i class="fas fa-magic"></i> Adaptive</span>
+                        </div>
+                        <div class="feature-details">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Automatic budget creation</li>
+                                <li><i class="fas fa-check"></i> Spending alerts</li>
+                                <li><i class="fas fa-check"></i> Goal-based budgeting</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="feature-card" data-category="automation">
+                        <div class="feature-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h3>Intelligent Alerts</h3>
+                        <p>Receive timely notifications about your finances, bills, and unusual activity.</p>
+                        <div class="feature-badges">
+                            <span class="badge"><i class="fas fa-bell"></i> Smart Alerts</span>
+                        </div>
+                        <div class="feature-details">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Bill reminders</li>
+                                <li><i class="fas fa-check"></i> Unusual spending alerts</li>
+                                <li><i class="fas fa-check"></i> Subscription tracking</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Security Features -->
+                    <div class="feature-card" data-category="security">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Bank-Level Security</h3>
+                        <p>Enterprise-grade security with 256-bit encryption and multi-factor authentication.</p>
+                        <div class="feature-badges">
+                            <span class="badge"><i class="fas fa-lock"></i> Secure</span>
+                        </div>
+                        <div class="feature-details">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Read-only access</li>
+                                <li><i class="fas fa-check"></i> Two-factor authentication</li>
+                                <li><i class="fas fa-check"></i> Biometric login</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Collaboration Features -->
+                    <div class="feature-card" data-category="collaboration">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Team & Family Sharing</h3>
+                        <p>Share financial insights and collaborate with family members or business partners.</p>
+                        <div class="feature-badges">
+                            <span class="badge"><i class="fas fa-share-alt"></i> Collaborative</span>
+                        </div>
+                        <div class="feature-details">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Shared dashboards</li>
+                                <li><i class="fas fa-check"></i> Role-based access</li>
+                                <li><i class="fas fa-check"></i> Team financial goals</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Demo -->
+        <section class="feature-demo" id="feature-demo">
+            <div class="container">
+                <div class="demo-header">
+                    <h2>See Qiver in Action</h2>
+                    <p>Watch how our features work together to simplify financial management</p>
+                </div>
+                <div class="demo-content">
+                    <div class="demo-video">
+                        <div class="video-container">
+                            <div class="video-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                                <img src="https://via.placeholder.com/800x450" alt="Qiver Feature Demo">
+                            </div>
+                            <div class="video-controls">
+                                <button class="control-btn active" data-demo="dashboard">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    Dashboard
+                                </button>
+                                <button class="control-btn" data-demo="budgeting">
+                                    <i class="fas fa-chart-pie"></i>
+                                    Budgeting
+                                </button>
+                                <button class="control-btn" data-demo="reports">
+                                    <i class="fas fa-file-alt"></i>
+                                    Reports
+                                </button>
+                                <button class="control-btn" data-demo="mobile">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    Mobile App
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-features">
+                        <h3>Featured in this Demo</h3>
+                        <div class="demo-feature-list">
+                            <div class="demo-feature-item active" data-demo="dashboard">
+                                <div class="demo-feature-icon">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                                <div class="demo-feature-content">
+                                    <h4>Unified Dashboard</h4>
+                                    <p>See all your accounts in one place with real-time updates</p>
+                                </div>
+                            </div>
+                            <div class="demo-feature-item" data-demo="budgeting">
+                                <div class="demo-feature-icon">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <div class="demo-feature-content">
+                                    <h4>Smart Budgeting</h4>
+                                    <p>AI-powered budget creation and tracking</p>
+                                </div>
+                            </div>
+                            <div class="demo-feature-item" data-demo="reports">
+                                <div class="demo-feature-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="demo-feature-content">
+                                    <h4>Advanced Reports</h4>
+                                    <p>Customizable financial reports and insights</p>
+                                </div>
+                            </div>
+                            <div class="demo-feature-item" data-demo="mobile">
+                                <div class="demo-feature-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="demo-feature-content">
+                                    <h4>Mobile Experience</h4>
+                                    <p>Full-featured app for iOS and Android</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="feature-comparison">
+            <div class="container">
+                <div class="comparison-header">
+                    <h2>Compare Features by Plan</h2>
+                    <p>Choose the right plan for your financial management needs</p>
+                </div>
+                <div class="comparison-table">
+                    <div class="comparison-row header">
+                        <div class="comparison-cell feature-name">Feature</div>
+                        <div class="comparison-cell plan">Starter</div>
+                        <div class="comparison-cell plan popular">Professional</div>
+                        <div class="comparison-cell plan">Enterprise</div>
+                    </div>
+
+                    <div class="comparison-row">
+                        <div class="comparison-cell feature-name">
+                            <i class="fas fa-chart-line"></i>
+                            Real-time Tracking
+                        </div>
+                        <div class="comparison-cell"><i class="fas fa-check"></i></div>
+                        <div class="comparison-cell popular"><i class="fas fa-check"></i></div>
+                        <div class="comparison-cell"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell feature-name">
+                            <i class="fas fa-brain"></i>
+                            AI Insights
+                        </div>
+                        <div class="comparison-cell">Basic</div>
+                        <div class="comparison-cell popular"><i class="fas fa-check"></i> Advanced</div>
+                        <div class="comparison-cell"><i class="fas fa-check"></i> Premium</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell feature-name">
+                            <i class="fas fa-file-alt"></i>
+                            Custom Reports
+                        </div>
+                        <div class="comparison-cell"><i class="fas fa-times"></i></div>
+                        <div class="comparison-cell popular"><i class="fas fa-check"></i></div>
+                        <div class="comparison-cell"><i class="fas fa-check"></i></div>
+                    </div>
+
+                    <div class="comparison-row">
+                        <div class="comparison-cell feature-name">
+                            <i class="fas fa-users"></i>
+                            Team Collaboration
+                        </div>
+                        <div class="comparison-cell"><i class="fas fa-times"></i></div>
+                        <div class="comparison-cell popular">Up to 5 users</div>
+                        <div class="comparison-cell">Unlimited</div>
+                    </div>
+
+                    <div class="comparison-row">
+                        <div class="comparison-cell feature-name">
+                            <i class="fas fa-headset"></i>
+                            Priority Support
+                        </div>
+                        <div class="comparison-cell"><i class="fas fa-times"></i></div>
+                        <div class="comparison-cell popular"><i class="fas fa-check"></i></div>
+                        <div class="comparison-cell"><i class="fas fa-check"></i> 24/7</div>
+                    </div>
+
+                    <div class="comparison-row actions">
+                        <div class="comparison-cell feature-name"></div>
+                        <div class="comparison-cell">
+                            <button class="btn btn-outline">Get Started</button>
+                        </div>
+                        <div class="comparison-cell popular">
+                            <button class="btn btn-primary">Try Free</button>
+                        </div>
+                        <div class="comparison-cell">
+                            <button class="btn btn-secondary">Contact Sales</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="features-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Financial Management?</h2>
+                    <p>Join thousands of individuals and businesses using Qiver to take control of their finances.</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary btn-large">
+                            <i class="fas fa-rocket"></i>
+                            Start 30-Day Free Trial
+                        </button>
+                        <button class="btn btn-secondary btn-large">
+                            <i class="fas fa-calendar"></i>
+                            Schedule a Demo
+                        </button>
+                    </div>
+                    <p class="cta-note">No credit card required • Cancel anytime • 24/7 support</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        fetch('./components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+
+    <script src="scripts/features.js"></script>
+</body>
+</html>

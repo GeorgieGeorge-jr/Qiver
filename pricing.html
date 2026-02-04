@@ -3,9 +3,520 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pricing - Qiver Fintech</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/pricing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <header class="header">
+        <nav class="navContainer">
+            <div class="logoContainer">
+                <h1 class="logo">Qiver</h1>
+            </div>
 
+            <div class="navListContainer">
+                <ul class="navList">
+                    <li class="navItem"><a href="./index.html">Home</a></li>
+                    <li class="navItem"><a href="./features.html">Features</a></li>
+                    <li class="navItem"><a href="./pricing.html" class="active">Pricing</a></li>
+                    <li class="navItem"><a href="./help-center.html">Help Center</a></li>
+                    <li class="navItem"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="navButtonContainer">
+                <button type="button" class="btn">
+                    Get Started
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pricing-container">
+        <!-- Hero Section -->
+        <section class="pricing-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Simple, Transparent Pricing</h1>
+                    <p class="hero-subtitle">Choose the perfect plan for your financial management needs. All plans include a 30-day free trial.</p>
+
+                    <div class="billing-toggle">
+                        <span class="toggle-label">Monthly</span>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="billingToggle">
+                            <label for="billingToggle" class="toggle-slider"></label>
+                        </div>
+                        <span class="toggle-label">Annual <span class="discount-badge">Save 20%</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="pricing-cards-section">
+            <div class="container">
+                <div class="pricing-cards">
+                    <!-- Starter Plan -->
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Starter</h3>
+                            <p class="plan-description">Perfect for individuals getting started with financial tracking</p>
+                        </div>
+
+                        <div class="plan-pricing">
+                            <div class="price monthly">
+                                <span class="currency">$</span>
+                                <span class="amount">9</span>
+                                <span class="decimal">.99</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <div class="price annually hidden">
+                                <span class="currency">$</span>
+                                <span class="amount">95</span>
+                                <span class="decimal">.90</span>
+                                <span class="period">/year</span>
+                                <div class="savings">Save $24</div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-outline btn-block">Start Free Trial</button>
+
+                        <div class="plan-features">
+                            <h4>What's included:</h4>
+                            <ul class="features-list">
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Up to 5 financial accounts</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Basic expense tracking</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Monthly budget creation</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Email support</span>
+                                </li>
+                                <li class="feature-item disabled">
+                                    <i class="fas fa-times"></i>
+                                    <span>Advanced AI insights</span>
+                                </li>
+                                <li class="feature-item disabled">
+                                    <i class="fas fa-times"></i>
+                                    <span>Custom reports</span>
+                                </li>
+                                <li class="feature-item disabled">
+                                    <i class="fas fa-times"></i>
+                                    <span>Team collaboration</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Professional Plan -->
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="plan-header">
+                            <h3 class="plan-name">Professional</h3>
+                            <p class="plan-description">For individuals and families who want complete financial control</p>
+                        </div>
+
+                        <div class="plan-pricing">
+                            <div class="price monthly">
+                                <span class="currency">$</span>
+                                <span class="amount">19</span>
+                                <span class="decimal">.99</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <div class="price annually hidden">
+                                <span class="currency">$</span>
+                                <span class="amount">191</span>
+                                <span class="decimal">.90</span>
+                                <span class="period">/year</span>
+                                <div class="savings">Save $48</div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-block">Start Free Trial</button>
+
+                        <div class="plan-features">
+                            <h4>Everything in Starter, plus:</h4>
+                            <ul class="features-list">
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Unlimited financial accounts</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Advanced AI insights</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Custom report builder</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Investment tracking</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Priority support</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Tax preparation tools</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Up to 5 team members</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Enterprise Plan -->
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Enterprise</h3>
+                            <p class="plan-description">For businesses and financial teams needing custom solutions</p>
+                        </div>
+
+                        <div class="plan-pricing">
+                            <div class="custom-price">
+                                <span class="amount">Custom</span>
+                                <span class="period">pricing</span>
+                            </div>
+                            <p class="price-description">Tailored to your organization's needs</p>
+                        </div>
+
+                        <button class="btn btn-secondary btn-block">Contact Sales</button>
+
+                        <div class="plan-features">
+                            <h4>Everything in Professional, plus:</h4>
+                            <ul class="features-list">
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Unlimited team members</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Custom API access</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Dedicated account manager</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>White-label solutions</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>SLA guarantees</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>On-premise deployment</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Custom integration support</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Comparison -->
+        <section class="detailed-comparison">
+            <div class="container">
+                <div class="comparison-header">
+                    <h2>Detailed Feature Comparison</h2>
+                    <p>See exactly what each plan includes</p>
+                </div>
+
+                <div class="comparison-table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th class="feature-column">Features</th>
+                                <th class="plan-column">
+                                    <div class="plan-header">
+                                        <h4>Starter</h4>
+                                        <div class="price">$9.99/month</div>
+                                    </div>
+                                </th>
+                                <th class="plan-column popular">
+                                    <div class="plan-header">
+                                        <h4>Professional</h4>
+                                        <div class="price">$19.99/month</div>
+                                    </div>
+                                </th>
+                                <th class="plan-column">
+                                    <div class="plan-header">
+                                        <h4>Enterprise</h4>
+                                        <div class="price">Custom</div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Core Features -->
+                            <tr class="category-header">
+                                <td colspan="4">
+                                    <h3><i class="fas fa-cube"></i> Core Features</h3>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="feature-name">Financial Accounts</td>
+                                <td>Up to 5</td>
+                                <td class="popular">Unlimited</td>
+                                <td>Unlimited</td>
+                            </tr>
+
+                            <tr>
+                                <td class="feature-name">Transaction History</td>
+                                <td>3 months</td>
+                                <td class="popular">Unlimited</td>
+                                <td>Unlimited</td>
+                            </tr>
+
+                            <tr>
+                                <td class="feature-name">Real-time Syncing</td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td class="popular"><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+
+                            <!-- AI Features -->
+                            <tr class="category-header">
+                                <td colspan="4">
+                                    <h3><i class="fas fa-brain"></i> AI &amp; Analytics</h3>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="feature-name">AI Categorization</td>
+                                <td>Basic</td>
+                                <td class="popular">Advanced</td>
+                                <td>Premium</td>
+                            </tr>
+
+                            <tr>
+                                <td class="feature-name">Predictive Insights</td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td class="popular"><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+                                <td class="feature-name">Custom Reports</td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td class="popular"><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+
+                            <!-- Collaboration -->
+                            <tr class="category-header">
+                                <td colspan="4">
+                                    <h3><i class="fas fa-users"></i> Collaboration</h3>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="feature-name">Team Members</td>
+                                <td>1</td>
+                                <td class="popular">Up to 5</td>
+                                <td>Unlimited</td>
+                            </tr>
+
+                            <tr>
+                                <td class="feature-name">Shared Dashboards</td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td class="popular"><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+
+                            <!-- Support -->
+                            <tr class="category-header">
+                                <td colspan="4">
+                                    <h3><i class="fas fa-headset"></i> Support &amp; Security</h3>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="feature-name">Support</td>
+                                <td>Email</td>
+                                <td class="popular">Priority Chat &amp; Email</td>
+                                <td>24/7 Phone &amp; Dedicated</td>
+                            </tr>
+
+                            <tr>
+                                <td class="feature-name">SLA Guarantee</td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td class="popular">99.5%</td>
+                                <td>99.9%</td>
+                            </tr>
+
+                            <!-- Actions -->
+                            <tr class="actions-row">
+                                <td class="feature-name"></td>
+                                <td>
+                                    <button type="button"  class="btn btn-outline">Get Started</button>
+                                </td>
+                                <td class="popular">
+                                    <button type="button"  class="btn btn-primary">Try Free</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary">Contact Sales</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="pricing-faq">
+            <div class="container">
+                <div class="faq-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Find answers to common questions about our pricing and plans</p>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I change plans later?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately, and you'll receive a prorated credit or charge.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is there a free trial?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! All paid plans include a 30-day free trial. No credit card is required to start your trial.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What payment methods do you accept?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers for Enterprise plans.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you offer discounts for non-profits?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer special pricing for registered non-profit organizations. Contact our sales team for details.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I cancel anytime?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely. You can cancel your subscription at any time from your account settings. No long-term contracts.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What happens to my data if I cancel?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Your data is preserved for 30 days after cancellation. You can export all your data before canceling, and we'll delete it after the grace period.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="pricing-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Still have questions?</h2>
+                    <p>Our team is here to help you choose the right plan for your needs.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-envelope"></i>
+                            Contact Sales
+                        </a>
+                        <a href="tel:+15551234567" class="btn btn-secondary btn-large">
+                            <i class="fas fa-phone"></i>
+                            Call&nbsp;Us&nbsp;Now
+                        </a>
+                    </div>
+                    <p class="cta-note">
+                        <i class="fas fa-clock"></i> Response within 2 hours •
+                        <i class="fas fa-comment"></i> Live chat available •
+                        <i class="fas fa-shield-alt"></i> 30-day money-back guarantee
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Badges -->
+        <section class="trust-badges">
+            <div class="container">
+                <div class="badges-content">
+                    <p>Trusted by forward-thinking companies</p>
+                    <div class="badges-grid">
+                        <div class="badge-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Bank-Level Security</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="fas fa-file-contract"></i>
+                            <span>SOC 2 Certified</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="fas fa-globe"></i>
+                            <span>GDPR Compliant</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="fas fa-lock"></i>
+                            <span>256-bit Encryption</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        fetch('./components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+
+    <script src="scripts/pricing.js"></script>
 </body>
 </html>

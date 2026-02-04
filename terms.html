@@ -3,34 +3,512 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms</title>
-
-    <style>
-        nav{
-            display:flex;
-            justify-content: space-between;
-            padding: 20px 40px;
-        }
-
-        ol{
-            list-style:none;
-            display: flex;
-            gap: 20px;
-        }
-    </style>
+    <title>Terms of Service - Qiver Fintech</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/terms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <header class="header">
+        <nav class="navContainer">
+            <div class="logoContainer">
+                <h1 class="logo">Qiver</h1>
+            </div>
 
-    <nav >
-        <div class="logo">
-            <h2>Qiver</h2>
-        </div>
-        <ol>
-            <li>Home</li>
-            <li>About</li>
-            <li>FAQ</li>
-            <li>Contact</li>
-        </ol>
-    </nav>
+            <div class="navListContainer">
+                <ul class="navList">
+                    <li class="navItem"><a href="./index.html">Home</a></li>
+                    <li class="navItem"><a href="./features.html">Features</a></li>
+                    <li class="navItem"><a href="./pricing.html">Pricing</a></li>
+                    <li class="navItem"><a href="./help-center.html">Help Center</a></li>
+                    <li class="navItem"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="navButtonContainer">
+                <button type="button" class="btn">
+                    Get Started
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="terms-container">
+        <!-- Hero Section -->
+        <section class="terms-hero">
+            <div class="container">
+                <h1 class="terms-hero-title">Terms of Service</h1>
+                <p class="terms-hero-subtitle">Last Updated: December 1, 2023</p>
+                <div class="agreement-status">
+                    <i class="fas fa-file-contract"></i>
+                    <div>
+                        <p>By using Qiver, you agree to these terms</p>
+                        <small>Please read them carefully</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Overview -->
+        <section class="terms-overview">
+            <div class="container">
+                <div class="overview-cards">
+                    <div class="overview-card">
+                        <div class="overview-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h4>Your Agreement</h4>
+                        <p>By using our services, you accept these terms</p>
+                    </div>
+                    <div class="overview-card">
+                        <div class="overview-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h4>Legal Terms</h4>
+                        <p>Binding legal agreement between you and Qiver</p>
+                    </div>
+                    <div class="overview-card">
+                        <div class="overview-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4>Updates</h4>
+                        <p>We may update terms periodically</p>
+                    </div>
+                    <div class="overview-card">
+                        <div class="overview-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h4>Questions?</h4>
+                        <p>Contact us for clarification</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="terms-content">
+            <div class="container">
+                <!-- Navigation Sidebar -->
+                <div class="terms-sidebar">
+                    <div class="sidebar-sticky">
+                        <h3>Table of Contents</h3>
+                        <nav class="sidebar-nav">
+                            <a href="#acceptance" class="sidebar-link active">
+                                <i class="fas fa-check-circle"></i>
+                                <span>1. Acceptance of Terms</span>
+                            </a>
+                            <a href="#services" class="sidebar-link">
+                                <i class="fas fa-cogs"></i>
+                                <span>2. Our Services</span>
+                            </a>
+                            <a href="#account" class="sidebar-link">
+                                <i class="fas fa-user-circle"></i>
+                                <span>3. Your Account</span>
+                            </a>
+                            <a href="#subscriptions" class="sidebar-link">
+                                <i class="fas fa-credit-card"></i>
+                                <span>4. Subscriptions</span>
+                            </a>
+                            <a href="#financial" class="sidebar-link">
+                                <i class="fas fa-chart-line"></i>
+                                <span>5. Financial Data</span>
+                            </a>
+                            <a href="#conduct" class="sidebar-link">
+                                <i class="fas fa-user-shield"></i>
+                                <span>6. User Conduct</span>
+                            </a>
+                            <a href="#intellectual" class="sidebar-link">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>7. Intellectual Property</span>
+                            </a>
+                            <a href="#liability" class="sidebar-link">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>8. Liability</span>
+                            </a>
+                            <a href="#termination" class="sidebar-link">
+                                <i class="fas fa-power-off"></i>
+                                <span>9. Termination</span>
+                            </a>
+                            <a href="#governing" class="sidebar-link">
+                                <i class="fas fa-gavel"></i>
+                                <span>10. Governing Law</span>
+                            </a>
+                        </nav>
+
+                        <div class="sidebar-actions">
+                            <a href="privacy.html" class="sidebar-action">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Privacy Policy</span>
+                            </a>
+                            <button class="sidebar-action" id="printTerms">
+                                <i class="fas fa-print"></i>
+                                <span>Print Terms</span>
+                            </button>
+                            <button class="sidebar-action" id="downloadTerms">
+                                <i class="fas fa-download"></i>
+                                <span>Download PDF</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terms Sections -->
+                <div class="terms-sections">
+                    <!-- Acceptance -->
+                    <section id="acceptance" class="term-section">
+                        <div class="section-header">
+                            <h2><span class="section-number">1.</span> Acceptance of Terms</h2>
+                            <div class="section-meta">
+                                <span class="last-updated"><i class="fas fa-history"></i> Updated: Nov 15, 2023</span>
+                                <span class="importance"><i class="fas fa-star"></i> Important</span>
+                            </div>
+                        </div>
+                        <div class="section-content">
+                            <p>Welcome to Qiver. By accessing or using our financial management platform, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any part of these terms, you may not use our services.</p>
+
+                            <div class="term-note important">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <div>
+                                    <h4>Key Points</h4>
+                                    <ul>
+                                        <li>You must be at least 18 years old to use Qiver</li>
+                                        <li>You must provide accurate and complete information</li>
+                                        <li>You are responsible for maintaining account security</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3>1.1. Modifications to Terms</h3>
+                            <p>We reserve the right to modify these terms at any time. We will notify you of significant changes via email or through our platform. Your continued use after changes constitutes acceptance.</p>
+                        </div>
+                    </section>
+
+                    <!-- Services -->
+                    <section id="services" class="term-section">
+                        <div class="section-header">
+                            <h2><span class="section-number">2.</span> Our Services</h2>
+                            <div class="section-meta">
+                                <span class="last-updated"><i class="fas fa-history"></i> Updated: Oct 1, 2023</span>
+                            </div>
+                        </div>
+                        <div class="section-content">
+                            <p>Qiver provides AI-powered financial management tools including but not limited to:</p>
+
+                            <div class="service-list">
+                                <div class="service-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Financial data aggregation and categorization</span>
+                                </div>
+                                <div class="service-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Budget creation and tracking</span>
+                                </div>
+                                <div class="service-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Investment monitoring</span>
+                                </div>
+                                <div class="service-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Financial insights and reporting</span>
+                                </div>
+                            </div>
+
+                            <div class="term-note warning">
+                                <i class="fas fa-info-circle"></i>
+                                <div>
+                                    <h4>Service Limitations</h4>
+                                    <p>Qiver is a financial management tool and does not provide investment, tax, or legal advice. You should consult with qualified professionals for such advice.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Account -->
+                    <section id="account" class="term-section">
+                        <div class="section-header">
+                            <h2><span class="section-number">3.</span> Your Account</h2>
+                        </div>
+                        <div class="section-content">
+                            <h3>3.1. Account Registration</h3>
+                            <p>You must provide accurate and complete information when creating an account. You are responsible for maintaining the confidentiality of your login credentials.</p>
+
+                            <h3>3.2. Account Security</h3>
+                            <p>You must notify us immediately of any unauthorized access or security breach. We are not liable for losses due to unauthorized access if you fail to secure your account.</p>
+
+                            <div class="comparison-table">
+                                <div class="comparison-header">
+                                    <div class="comparison-cell">Your Responsibility</div>
+                                    <div class="comparison-cell">Our Responsibility</div>
+                                </div>
+                                <div class="comparison-row">
+                                    <div class="comparison-cell">
+                                        <i class="fas fa-user-lock"></i>
+                                        <strong>Account Security</strong>
+                                        <p>Keep credentials secure</p>
+                                    </div>
+                                    <div class="comparison-cell">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <strong>Platform Security</strong>
+                                        <p>Protect against system breaches</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Subscriptions -->
+                    <section id="subscriptions" class="term-section">
+                        <div class="section-header">
+                            <h2><span class="section-number">4.</span> Subscriptions and Billing</h2>
+                        </div>
+                        <div class="section-content">
+                            <h3>4.1. Subscription Plans</h3>
+                            <p>We offer various subscription plans as described on our pricing page. All fees are exclusive of taxes, which you are responsible for paying.</p>
+
+                            <div class="pricing-details">
+                                <div class="pricing-card">
+                                    <h4>Starter Plan</h4>
+                                    <div class="price">$9.99<span>/month</span></div>
+                                    <p>Basic financial tracking</p>
+                                </div>
+                                <div class="pricing-card">
+                                    <h4>Professional Plan</h4>
+                                    <div class="price">$19.99<span>/month</span></div>
+                                    <p>Full platform access</p>
+                                </div>
+                                <div class="pricing-card">
+                                    <h4>Enterprise Plan</h4>
+                                    <div class="price">Custom<span>/month</span></div>
+                                    <p>Business solutions</p>
+                                </div>
+                            </div>
+
+                            <h3>4.2. Billing Cycle</h3>
+                            <p>Subscriptions automatically renew unless cancelled at least 24 hours before the renewal date. We will notify you before price changes.</p>
+
+                            <h3>4.3. Refunds</h3>
+                            <p>We offer a 30-day money-back guarantee. Refund requests after 30 days are reviewed on a case-by-case basis.</p>
+                        </div>
+                    </section>
+
+                    <!-- Financial Data -->
+                    <section id="financial" class="term-section">
+                        <div class="section-header">
+                            <h2><span class="section-number">5.</span> Financial Data</h2>
+                            <div class="section-meta">
+                                <span class="importance"><i class="fas fa-star"></i> Critical</span>
+                            </div>
+                        </div>
+                        <div class="section-content">
+                            <div class="term-note critical">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <div>
+                                    <h4>Data Accuracy Disclaimer</h4>
+                                    <p>While we strive for accuracy, we do not guarantee the completeness or accuracy of financial data provided by third-party institutions.</p>
+                                </div>
+                            </div>
+
+                            <h3>5.1. Data Aggregation</h3>
+                            <p>We use Plaid and other secure providers to access your financial data. By using our services, you authorize us to access this data on your behalf.</p>
+
+                            <h3>5.2. Data Storage</h3>
+                            <p>We store your financial data securely using bank-level encryption. Data is retained according to our privacy policy.</p>
+                        </div>
+                    </section>
+
+                    <!-- User Conduct -->
+                    <section id="conduct" class="term-section">
+                        <div class="section-header">
+                            <h2><span class="section-number">6.</span> Acceptable Use</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>You agree not to:</p>
+                            <div class="prohibited-list">
+                                <div class="prohibited-item">
+                                    <i class="fas fa-ban"></i>
+                                    <span>Violate any laws or regulations</span>
+                                </div>
+                                <div class="prohibited-item">
+                                    <i class="fas fa-ban"></i>
+                                    <span>Impersonate others or provide false information</span>
+                                </div>
+                                <div class="prohibited-item">
+                                    <i class="fas fa-ban"></i>
+                                    <span>Attempt to access others' accounts</span>
+                                </div>
+                                <div class="prohibited-item">
+                                    <i class="fas fa-ban"></i>
+                                    <span>Interfere with service operation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Intellectual Property -->
+                    <section id="intellectual" class="term-section">
+                        <div class="section-header">
+                            <h2><span class="section-number">7.</span> Intellectual Property</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>All content, features, and functionality of Qiver are owned by us and protected by intellectual property laws.</p>
+
+                            <div class="ip-rights">
+                                <div class="ip-card">
+                                    <div class="ip-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <h4>Platform Rights</h4>
+                                    <p>We own all rights to the Qiver platform, code, and design</p>
+                                </div>
+                                <div class="ip-card">
+                                    <div class="ip-icon">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </div>
+                                    <h4>Your Data Rights</h4>
+                                    <p>You retain ownership of your financial data</p>
+                                </div>
+                                <div class="ip-card">
+                                    <div class="ip-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <h4>AI Models</h4>
+                                    <p>Our AI models and algorithms are proprietary</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Liability -->
+                    <section id="liability" class="term-section">
+                        <div class="section-header">
+                            <h2><span class="section-number">8.</span> Limitation of Liability</h2>
+                            <div class="section-meta">
+                                <span class="importance"><i class="fas fa-star"></i> Important</span>
+                            </div>
+                        </div>
+                        <div class="section-content">
+                            <div class="liability-disclaimer">
+                                <h3>8.1. Disclaimer of Warranties</h3>
+                                <p>Our services are provided "as is" without warranties of any kind. We do not guarantee uninterrupted or error-free service.</p>
+
+                                <h3>8.2. Limitation of Liability</h3>
+                                <p>To the maximum extent permitted by law, we are not liable for any indirect, incidental, or consequential damages arising from your use of our services.</p>
+
+                                <div class="liability-limits">
+                                    <h4>Liability Caps</h4>
+                                    <div class="limits-grid">
+                                        <div class="limit-card">
+                                            <div class="limit-amount">$100</div>
+                                            <p>Maximum liability for Starter plan</p>
+                                        </div>
+                                        <div class="limit-card">
+                                            <div class="limit-amount">$1,000</div>
+                                            <p>Maximum liability for Professional plan</p>
+                                        </div>
+                                        <div class="limit-card">
+                                            <div class="limit-amount">Contractual</div>
+                                            <p>Enterprise plan liability terms</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Termination -->
+                    <section id="termination" class="term-section">
+                        <div class="section-header">
+                            <h2><span class="section-number">9.</span> Termination</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>You may terminate your account at any time through your account settings. We reserve the right to terminate accounts for violations of these terms.</p>
+
+                            <div class="termination-process">
+                                <h4>Account Closure Process</h4>
+                                <div class="process-steps">
+                                    <div class="process-step">
+                                        <div class="step-number">1</div>
+                                        <p>Cancel subscription</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <div class="step-number">2</div>
+                                        <p>Export your data</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <div class="step-number">3</div>
+                                        <p>Request account deletion</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <div class="step-number">4</div>
+                                        <p>Data retention period (30 days)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Governing Law -->
+                    <section id="governing" class="term-section">
+                        <div class="section-header">
+                            <h2><span class="section-number">10.</span> Governing Law</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>These terms are governed by the laws of the State of Delaware, without regard to its conflict of law provisions.</p>
+
+                            <div class="legal-info">
+                                <div class="legal-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <h4>Jurisdiction</h4>
+                                        <p>Delaware, United States</p>
+                                    </div>
+                                </div>
+                                <div class="legal-item">
+                                    <i class="fas fa-balance-scale"></i>
+                                    <div>
+                                        <h4>Dispute Resolution</h4>
+                                        <p>Arbitration preferred over litigation</p>
+                                    </div>
+                                </div>
+                                <div class="legal-item">
+                                    <i class="fas fa-globe"></i>
+                                    <div>
+                                        <h4>International Users</h4>
+                                        <p>Subject to U.S. export controls</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Acceptance Checkbox -->
+                    <div class="acceptance-box">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="acceptTerms">
+                            <label for="acceptTerms">
+                                <i class="fas fa-check"></i>
+                                <span>I have read and agree to the Terms of Service</span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary" id="confirmAcceptance">
+                            <i class="fas fa-signature"></i>
+                            Confirm Acceptance
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <script>
+        fetch('./components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+
+    <script src="scripts/terms.js"></script>
 </body>
 </html>
