@@ -20,7 +20,7 @@
                     <li class="navItem"><a href="./index.html">Home</a></li>
                     <li class="navItem"><a href="./features.html">Features</a></li>
                     <li class="navItem"><a href="./pricing.html" class="active">Pricing</a></li>
-                    <li class="navItem"><a href="./help-center.html">Help Center</a></li>
+                    <li class="navItem"><a href="helpCenter.html">Help Center</a></li>
                     <li class="navItem"><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -41,13 +41,13 @@
                     <h1 class="hero-title">Simple, Transparent Pricing</h1>
                     <p class="hero-subtitle">Choose the perfect plan for your financial management needs. All plans include a 30-day free trial.</p>
 
-                    <div class="billing-toggle">
+                    <div class="billing-toggle" role="group" aria-label="Billing frequency">
                         <span class="toggle-label">Monthly</span>
                         <div class="toggle-switch">
-                            <input type="checkbox" id="billingToggle">
-                            <label for="billingToggle" class="toggle-slider"></label>
+                            <input type="checkbox" id="billingToggle" aria-label="Toggle billing: monthly or annual">
+                            <label for="billingToggle" class="toggle-slider" aria-hidden="true"></label>
                         </div>
-                        <span class="toggle-label">Annual <span class="discount-badge">Save 20%</span></span>
+                        <span class="toggle-label">Annual <span class="discount-badge" aria-hidden="true">Save 20%</span></span>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                             </div>
                         </div>
 
-                        <button class="btn btn-outline btn-block">Start Free Trial</button>
+                        <button type="button" class="btn btn-outline btn-block" aria-label="Start Starter free trial">Start Free Trial</button>
 
                         <div class="plan-features">
                             <h4>What's included:</h4>
@@ -141,7 +141,7 @@
                             </div>
                         </div>
 
-                        <button class="btn btn-primary btn-block">Start Free Trial</button>
+                        <button type="button" class="btn btn-primary btn-block" aria-label="Start Professional free trial">Start Free Trial</button>
 
                         <div class="plan-features">
                             <h4>Everything in Starter, plus:</h4>
@@ -193,7 +193,7 @@
                             <p class="price-description">Tailored to your organization's needs</p>
                         </div>
 
-                        <button class="btn btn-secondary btn-block">Contact Sales</button>
+                        <button type="button" class="btn btn-secondary btn-block" aria-label="Contact sales for Enterprise">Contact Sales</button>
 
                         <div class="plan-features">
                             <h4>Everything in Professional, plus:</h4>
