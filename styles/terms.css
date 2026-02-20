@@ -1,11 +1,17 @@
 /* Terms of Service Specific Styles */
+:root {
+    --header-height: 110px;
+    --secondary-color: #e8f5f0;
+}
+
 .terms-container {
     padding-top: var(--header-height);
+    color: var(--text-dark);
 }
 
 /* Hero Section */
 .terms-hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #1e293b 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
     color: white;
     padding: 80px 0;
     text-align: center;
@@ -35,7 +41,7 @@
 
 .agreement-status i {
     font-size: 2rem;
-    color: var(--accent-color);
+    color: var(--accent);
 }
 
 /* Overview Section */
@@ -72,18 +78,18 @@
     align-items: center;
     justify-content: center;
     background: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--primary);
     border-radius: 50%;
     font-size: 1.5rem;
 }
 
 .overview-card h4 {
     margin-bottom: 10px;
-    color: var(--text-color);
+    color: var(--text-dark);
 }
 
 .overview-card p {
-    color: var(--text-light);
+    color: var(--text-dark);
     font-size: 0.9rem;
 }
 
@@ -116,9 +122,9 @@
 
 .sidebar-sticky h3 {
     margin-bottom: 20px;
-    color: var(--text-color);
+    color: var(--text-dark);
     padding-bottom: 15px;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary);
 }
 
 .sidebar-nav {
@@ -134,7 +140,7 @@
     gap: 12px;
     padding: 12px 15px;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-dark);
     border-radius: 8px;
     transition: var(--transition);
     border-left: 3px solid transparent;
@@ -143,8 +149,8 @@
 .sidebar-link:hover,
 .sidebar-link.active {
     background: var(--secondary-color);
-    color: var(--primary-color);
-    border-left-color: var(--primary-color);
+    color: var(--primary);
+    border-left-color: var(--primary);
 }
 
 .sidebar-link i {
@@ -171,13 +177,13 @@
     cursor: pointer;
     transition: var(--transition);
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-dark);
     font-size: 0.9rem;
 }
 
 .sidebar-action:hover {
     background: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 /* Terms Sections */
@@ -199,7 +205,7 @@
 
 .section-header h2 {
     font-size: 1.8rem;
-    color: var(--text-color);
+    color: var(--text-dark);
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -207,7 +213,7 @@
 }
 
 .section-number {
-    color: var(--primary-color);
+    color: var(--primary);
     font-weight: 700;
     min-width: 30px;
 }
@@ -216,7 +222,8 @@
     display: flex;
     gap: 20px;
     font-size: 0.9rem;
-    color: var(--text-light);
+    color: var(--text-dark);
+    opacity: 0.8;
 }
 
 .importance {
@@ -226,11 +233,12 @@
 
 .section-content {
     line-height: 1.8;
-    color: var(--text-light);
+    color: var(--text-dark);
+    opacity: 0.85;
 }
 
 .section-content h3 {
-    color: var(--text-color);
+    color: var(--text-dark);
     margin: 25px 0 15px;
     font-size: 1.3rem;
 }
@@ -253,6 +261,7 @@
 .term-note.important {
     background: #fef3c7;
     border-left: 4px solid #f59e0b;
+    color: #1e293b;
 }
 
 .term-note.important i {
@@ -262,6 +271,7 @@
 .term-note.warning {
     background: #fee2e2;
     border-left: 4px solid #ef4444;
+    color: #1e293b;
 }
 
 .term-note.warning i {
@@ -271,6 +281,7 @@
 .term-note.critical {
     background: #fef3c7;
     border-left: 4px solid #dc2626;
+    color: #1e293b;
 }
 
 .term-note.critical i {
@@ -315,7 +326,7 @@
 }
 
 .service-item i {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 /* Comparison Table */
@@ -330,7 +341,7 @@
     display: flex;
     background: #f8fafc;
     font-weight: 600;
-    color: var(--text-color);
+    color: var(--text-dark);
 }
 
 .comparison-cell {
@@ -352,7 +363,7 @@
 .comparison-cell i {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 /* Pricing Details */
@@ -372,24 +383,25 @@
 }
 
 .pricing-card:hover {
-    border-color: var(--primary-color);
+    border-color: var(--primary);
 }
 
 .pricing-card h4 {
     margin-bottom: 10px;
-    color: var(--text-color);
+    color: var(--text-dark);
 }
 
 .pricing-card .price {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--primary);
     margin-bottom: 10px;
 }
 
 .pricing-card .price span {
     font-size: 1rem;
-    color: var(--text-light);
+    color: var(--text-dark);
+    opacity: 0.7;
     font-weight: normal;
 }
 
@@ -409,6 +421,7 @@
 
 .prohibited-item i {
     color: #ef4444;
+    flex-shrink: 0;
 }
 
 /* IP Rights */
@@ -434,14 +447,14 @@
     align-items: center;
     justify-content: center;
     background: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--primary);
     border-radius: 50%;
     font-size: 1.5rem;
 }
 
 .ip-card h4 {
     margin-bottom: 10px;
-    color: var(--text-color);
+    color: var(--text-dark);
 }
 
 /* Liability Limits */
@@ -466,7 +479,7 @@
 .limit-amount {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--primary);
     margin-bottom: 10px;
 }
 
@@ -497,7 +510,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--primary-color);
+    background: var(--primary);
     color: white;
     border-radius: 50%;
     font-weight: 700;
@@ -519,21 +532,21 @@
 
 .legal-item i {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .legal-item h4 {
     margin-bottom: 5px;
-    color: var(--text-color);
+    color: var(--text-dark);
 }
 
 /* Acceptance Box */
 .acceptance-box {
     margin-top: 50px;
     padding: 30px;
-    background: #f0f9ff;
+    background: #e8f5f0;
     border-radius: 10px;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--primary);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -555,7 +568,7 @@
     gap: 10px;
     cursor: pointer;
     font-weight: 600;
-    color: var(--text-color);
+    color: var(--text-dark);
 }
 
 .checkbox-container label i {
@@ -564,14 +577,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #cbd5e1;
+    border: 2px solid var(--primary);
     border-radius: 4px;
     transition: var(--transition);
+    background: white;
 }
 
 .checkbox-container input:checked + label i {
-    background: var(--primary-color);
-    border-color: var(--primary-color);
+    background: var(--primary);
+    border-color: var(--primary);
     color: white;
 }
 
