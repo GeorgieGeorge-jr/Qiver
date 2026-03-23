@@ -141,4 +141,33 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // View More Testimonials Functionality
+    const viewMoreBtn = document.getElementById('viewMoreBtn');
+    const hiddenTestimonials = document.querySelectorAll('.hidden-testimonial');
+
+    if (viewMoreBtn && hiddenTestimonials.length > 0) {
+        viewMoreBtn.addEventListener('click', function() {
+            const isExpanded = viewMoreBtn.getAttribute('data-expanded') === 'true';
+            
+            if (!isExpanded) {
+                // Show hidden testimonials
+                hiddenTestimonials.forEach(testimonial => {
+                    testimonial.classList.add('visible');
+                });
+                viewMoreBtn.textContent = 'Show Less';
+                viewMoreBtn.setAttribute('data-expanded', 'true');
+            } else {
+                // Hide testimonials
+                hiddenTestimonials.forEach(testimonial => {
+                    testimonial.classList.remove('visible');
+                });
+                viewMoreBtn.textContent = 'View More';
+                viewMoreBtn.setAttribute('data-expanded', 'false');
+                
+                // Scroll to button for better UX
+                viewMoreBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        });
+    }
 });
